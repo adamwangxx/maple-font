@@ -262,15 +262,35 @@ def get_lookup(cls_var: ast.Clazz):
         #                Mark annotation in Xcode
         #             example: `// TODO: code review`
         # ---------------------------------------------------------
-        # ast.subst_liga(
-        #     source="TODO:",
-        #     target="tag_todo.liga",
-        #     lookup_name="todo_colon"
-        # )
-        # ast.subst_liga(
-        #     source="MARK:",
-        #     target="tag_todo.liga",
-        #     lookup_name="mark_colon"
-        # )
+        ast.subst_liga(
+            source="TODO:",
+            target="tag_todo.liga",
+            lookup_name="todo_colon"
+        )
+        ast.subst_liga(
+            source="MARK:",
+            target="tag_todo.liga",
+            lookup_name="mark_colon"
+        )
+        ast.subst_liga(
+            source="INFO:",
+            target="tag_todo.liga",
+            lookup_name="mark_colon"
+        )
+        ast.subst_liga(
+            source="INFO:",
+            target="tag_todo.liga",
+            lookup_name="mark_colon"
+        )
+        ast.subst_liga(
+            source="FIXME:",
+            target="tag_todo.liga",
+            lookup_name="mark_colon"
+        )
+        ast.subst_liga(
+            source="NOTE:",
+            target="tag_todo.liga",
+            lookup_name="mark_colon"
+        )
         # =========================================================
     ]
