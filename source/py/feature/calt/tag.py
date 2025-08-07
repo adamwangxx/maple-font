@@ -282,11 +282,11 @@ def get_lookup(cls_var: ast.Clazz):
         #             example: `// TODO: code review`
         #   Limitation: the first glyph before will be overlapped
         # ---------------------------------------------------------
-        tag_suffix_colon(
-            [
-                # "todo",
-                # "mark",
-            ]
-        ),
+        tag_suffix_colon([
+            "todo",
+            "mark",
+            "note",
+            "info"
+        ])
         # =========================================================
     ]
