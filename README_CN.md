@@ -565,6 +565,17 @@ python build.py
 >
 > 如果您在安装依赖项时遇到问题，只需创建一个新的 GitHub Codespace 并在那里运行命令
 
+#### 高分屏 NF-CN TTF 快捷构建
+
+仓库根目录的 [`build-nf-cn-unhinted-ttf.sh`](./build-nf-cn-unhinted-ttf.sh) 会构建适合 Retina、4K 等高分屏的未 Hint Nerd Font 中文 TTF：
+
+```shell
+chmod +x build-nf-cn-unhinted-ttf.sh
+./build-nf-cn-unhinted-ttf.sh
+```
+
+脚本依赖 [uv](https://docs.astral.sh/uv/)，等价于 `uv run build.py --nf --cn --ttf-only --no-hinted`。输出写入 `fonts/NF-CN/`，会覆盖该目录下同名的字体文件。
+
 ### 窄字符
 
 你可以在 config.json 中设置 `"width": "narrow"` 或者在命令行添加 `--width slim` 来在构建时修改字形宽度。中文字符部分也会等比例修改。
