@@ -9,6 +9,7 @@ __pycache__
 .DS_store
 *.zip
 .venv
+venv/
 .vscode
 uv.lock
 *.backup
